@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: weatherapp-ui-ingress
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - www.weatherapp.com
+      secretName: weatherapp-ui-tls
+  rules:
+    - host: www.weatherapp.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: weatherapp-ui
+                port:
+                  number: 3000
