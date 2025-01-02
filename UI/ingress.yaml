@@ -6,10 +6,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - www.weatherapp.com
+        - weatherapp.com
       secretName: weatherapp-ui-tls
   rules:
-    - host: www.weatherapp.com
+    - host: weatherapp.com
       http:
         paths:
           - path: /
