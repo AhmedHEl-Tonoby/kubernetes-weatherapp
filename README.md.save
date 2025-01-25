@@ -1,5 +1,4 @@
-# Weather App 🌦️
-
+# Weather App ️
 
 ## Overview
 The **Weather App** is a Kubernetes-based application designed to simulate a weather service system. The application consists of three interconnected **microservices**:  
@@ -22,7 +21,7 @@ The project uses Kubernetes to orchestrate deployments, manage configurations, a
 2. **Weather Service (API)**:
    - **Purpose**: Provides weather data via APIs.
    - **Features**:
-     - Fetches real time or simulated weather data.
+     - Fetches real-time or simulated weather data.
      - Responds to requests from the UI.
    - **Implementation**: Deployed as a **Deployment** with readiness and liveness probes.
 
